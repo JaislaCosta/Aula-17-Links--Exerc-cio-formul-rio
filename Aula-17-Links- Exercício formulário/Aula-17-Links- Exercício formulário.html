@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <legend>Itens adicionais:</legend>
+          <input type="checkbox" name="som" id="isom"><label for="isom">Som Premium</label><br>
+          <input type="checkbox" name="ar" id="iar"><label for="iar">Ar-condicionado Digital</label><br>
+          <input type="checkbox" name="câmera" id="icâmera"><label for="icâmera">Câmera 360°</label><br><br>
+
+          <!--legend = somente para linha do fieldset
+          label = usado antes do input-->
+
+          <label for="icor">Cor do carro:</label><br>
+          <input type="color" name="cor" id="icor" value="#000000"><br><br>
+
+          <label for="ibrilho">Intesidade da cor (brilho):</label><br>
+          <input type="range" id="ibrilho" min="1" max="5" value="2"><br><br>
+
+          <fieldset>
+                    <legend>Entrega</legend>
+                    <label for="idata">Data desejada para entrega:</label><br>
+                    <input type="date" name="data" id="idata"><br><br>
+
+                    <label for="ihora">Hora preferida para entrega:</label><br>
+                    <input type="time" name="hora" id="ihora"><br><br>
+
+                    <label for="imes">Mês da compra:</label><br>
+                    <input type="month" name="mes" id="imes">
+          </fieldset><br><br>
+
+          <fieldset>
+                    <legend>Sua Opinião</legend><br>
+                    <label for="iopiniao">Conte qual é a sua expectativa sobre o carro:</label><br>
+                    <input type="text" name="opiniao" id="iopiniao" style="width:300px; height:100px;"
+                    placeholder="Exemplo: Espero que o carro tenha boa autonomia,
+                    seja confortável, silemcioso e impressione os vizinhos!">
+          </fieldset>
+</body>
+</html>
