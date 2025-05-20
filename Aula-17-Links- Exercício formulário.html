@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="#" method="post" autocomplete="on">
+    <form action="#" method="get" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -20,12 +20,11 @@
             </p> 
             <p>
                 <label for="itel">Telefone (formato (XX)XXXXX-XXXX):</label><br>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(11) 91234-5678">
+            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(11) 91234-5678" required>
             </p>
             <p>
                 <label for="ipassword">Crie uma senha:</label><br>
-            <input type="text" name="password" id="ipassword" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[@#$%^&+=!]).{8,}" 
-            title="A senha deve ter no mínimo 8 caracteres, incluindo: uma letra maiúscula, uma letra minúscula, um número e um símbolo especial (@#$%^&+=!).">
+            <input type="text" name="password" id="ipassword" placeholder="Digite sua senha" minlength="8" maxlength="12" autocomplete="off" required>
             </p>
             <p>
                 <label for="iidade">Idade:</label><br>
@@ -83,13 +82,13 @@
         <fieldset>
             <legend>Escolha do Carro</legend>
             <p>
-            <label for="imodelo">Escolha o modelo:</label><br>
-            <input type="radio" name="modelo" id="imodelo" value="BYD Seal">
-            <label for="imadelo">BYD Seal</label><br>
-            <input type="radio" name="modelo" id="imodelo" value="BYD Han">
-            <label for="imadelo">BYD Han</label><br>
-            <input type="radio" name="modelo" id="imodelo" value="BYD Song Plus">
-            <label for="imadelo">BYD Song Plus</label><br>
+            <label for="imodeloSeal">Escolha o modelo:</label><br>
+            <input type="radio" name="modelo" id="imodeloSeal" value="BYD Seal">
+            <label for="imadeloHan">BYD Seal</label><br>
+            <input type="radio" name="modelo" id="imodeloHan" value="BYD Han">
+            <label for="imadeloPlus">BYD Han</label><br>
+            <input type="radio" name="modelo" id="imodeloPlus" value="BYD Song Plus">
+            <label for="imadeloPlus">BYD Song Plus</label><br>
             </p>
 
             <p>
@@ -147,7 +146,7 @@
             <input type="number" name="gs" id="igs" min="0" max="5" placeholder="0 a 5 estrelas" style="width:65px;"><br><br>
 
             <label for="imini">Avalie o BYD Mini:</label><br>
-            <input type="number" name="mini" id="iminni" min="0" max="5" placeholder="0 a 5 estrelas" style="width:65px;"><br>
+            <input type="number" name="mini" id="imini" min="0" max="5" placeholder="0 a 5 estrelas" style="width:65px;"><br>
             </p>
           </fieldset>
           <p>
